@@ -33,4 +33,12 @@ function generateGame() {
             playerMove = move[i].value;
         }
     }
+
+    if (turn == 0 && difficulty != 0 && playerMove != currentClass[3]) {
+        setTimeout(function () {
+            console.log("hello!! I should be working");
+            pickMachine();
+        }, 200);
+    }
+    
 }
